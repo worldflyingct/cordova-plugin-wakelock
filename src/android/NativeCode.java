@@ -49,6 +49,7 @@ public class NativeCode extends CordovaPlugin {
             }
             return true;
         } else if (action.equals("release")) {
+            String tag = args.getString(0);
             boolean b = WakeLock.UnLock (tag);
             if (b) {
                 JSONObject obj = new JSONObject();
