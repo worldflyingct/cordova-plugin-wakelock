@@ -33,7 +33,7 @@ public class WakeLock {
         return true;
     }
 
-    public static boolean UnLock(String tag, Context context) {
+    public static boolean UnLock(String tag) {
         PowerManager.WakeLock wl = map.get(tag);
         if (wl == null) {
             return false;
