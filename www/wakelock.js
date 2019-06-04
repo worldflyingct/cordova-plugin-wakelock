@@ -1,30 +1,25 @@
 var exec = require('cordova/exec');
 
-exports = {
+module.exports = {
   coolMethod: function (arg0, success, error) {
-    // exec(success, error, 'NativeCode', 'coolMethod', [arg0]);
-    if (arg0.length > 0) {
-      success (arg0)
-    } else {
-      error ('arg0 is null')
-    }
+    exec(success, error, 'NativeCode', 'coolMethod', [arg0]);
   },
   acquire: function (timeout, flags, tag) {
     return new Promise (function (resolve, reject) {
-        exec(function (res) {
-            resolve (res)
-        }, function (err) {
-            reject (err)
-        }, 'NativeCode', 'acquire', [timeout, flags, tag]);
+      exec(function (res) {
+        resolve (res)
+      }, function (err) {
+        reject (err)
+      }, 'NativeCode', 'acquire', [timeout, flags, tag]);
     })
   },
   release: function (tag) {
     return new Promise (function (resolve, reject) {
-        exec(function (res) {
-            resolve (res)
-        }, function (err) {
-            reject (err)
-        }, 'NativeCode', 'release', [tag]);
+      exec(function (res) {
+        resolve (res)
+      }, function (err) {
+        reject (err)
+      }, 'NativeCode', 'release', [tag]);
     })
   },
   PARTIAL_WAKE_LOCK: 0x00000001,
@@ -51,6 +46,5 @@ exports = {
   USER_ACTIVITY_FLAG_INDIRECT: 1 << 1,
   GO_TO_SLEEP_REASON_APPLICATION: 0,
   GO_TO_SLEEP_REASON_DEVICE_ADMIN: 1,
-  GO_TO_SLEEP_REASON_TIMEOUT: 2  
+  GO_TO_SLEEP_REASON_TIMEOUT: 2
 }
-  
