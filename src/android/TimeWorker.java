@@ -1,4 +1,4 @@
-package cn.worldflying.cordovaplugin;
+package cn.worldflying.wakelock;
 
 import java.util.TimerTask;
 

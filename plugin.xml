@@ -6,15 +6,15 @@
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="wakelock">
-                <param name="android-package" value="cn.worldflying.cordovaplugin.WakeLock" />
+            <feature name="NativeCode">
+                <param name="android-package" value="cn.worldflying.wakelock.NativeCode" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.WAKE_LOCK" />
         </config-file>
-        <source-file src="src/android/NativeCode.java" target-dir="src/cn/worldflying/cordovaplugin" />
-        <source-file src="src/android/WakeLock.java" target-dir="src/cn/worldflying/cordovaplugin" />
-        <source-file src="src/android/TimeWorker.java" target-dir="src/cn/worldflying/cordovaplugin" />
+        <source-file src="src/android/NativeCode.java" target-dir="src/cn/worldflying/wakelock" />
+        <source-file src="src/android/WakeLock.java" target-dir="src/cn/worldflying/wakelock" />
+        <source-file src="src/android/TimeWorker.java" target-dir="src/cn/worldflying/wakelock" />
     </platform>
 </plugin>
