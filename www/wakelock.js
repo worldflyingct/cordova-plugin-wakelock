@@ -10,7 +10,7 @@ exports.wakelock = {
             exec(function (res) {
                 resolve (res)
             }, function (err) {
-                resolve (err)
+                reject (err)
             }, 'NativeCode', 'acquire', [timeout, flags, tag]);
         })
     },
@@ -19,7 +19,7 @@ exports.wakelock = {
             exec(function (res) {
                 resolve (res)
             }, function (err) {
-                resolve (err)
+                reject (err)
             }, 'NativeCode', 'release', [tag]);
         })
     }
