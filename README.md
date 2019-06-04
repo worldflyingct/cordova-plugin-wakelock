@@ -3,6 +3,6 @@
 
 使用方法为：
 
-cordova.plugins.NativeCode.duyun.startaudio (address) // address为一个udp地址，由另一个命令发送给后台生成
+cordova.plugins.wakelock.acquire (timeout, flags, tag) // timeout为0则不设置超时
 
-cordova.plugins.NativeCode.duyun.stopaudio ()
+cordova.plugins.wakelock.release (tag)
