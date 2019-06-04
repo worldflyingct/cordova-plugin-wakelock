@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-wakelock" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>wakelock</name>
-    <js-module name="NativeCode" src="www/NativeCode.js">
-        <clobbers target="cordova.plugins.NativeCode" />
+    <js-module name="wakelock" src="www/wakelock.js">
+        <clobbers target="cordova.plugins.wakelock" />
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">

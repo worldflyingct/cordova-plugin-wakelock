@@ -4,7 +4,7 @@
   "description": "This is worldflying Co.,Ltd Project plugin",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/worldflyingct/nativecode.git"
+    "url": "git+https://github.com/worldflyingct/cordova-plugin-wakelock.git"
   },
   "author": {
     "name": "jevian ma(马作伟)",
@@ -12,7 +12,7 @@
   },
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/worldflyingct/nativecode/issues"
+    "url": "https://github.com/worldflyingct/cordova-plugin-wakelock/issues"
   },
   "homepage": "https://www.worldflying.cn"
 }
